@@ -1,0 +1,375 @@
+// var
+
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+$fontHead: 'Rubik', sans-serif;
+
+%button {
+  background: transparent;
+  border: 0.2rem solid rgb(247, 78, 161);
+  padding: 1.8rem 3.25rem;
+  color: rgb(247, 78, 161);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  border-radius: 3rem;
+  margin-top: 2.5rem;
+  display: inline-block;
+  min-width: 20rem;
+  text-align: center;
+  transition: background-color 0.25s ease 0s, color 0.25s ease 0s;
+
+  &:hover {
+    background: rgb(247, 78, 161);
+    color: white;
+  }
+}
+
+.banRow {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -10;
+}
+
+.bring {
+  h1 {
+    margin-top: 300px;
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 7rem;
+    line-height: 1.15;
+    letter-spacing: -0.075rem;
+    max-width: 14ch;
+  }
+  p {
+    color: rgb(135, 135, 135);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+  }
+  button {
+    @extend %button;
+  }
+}
+
+// who
+.whoRow {
+  padding-top: 230px;
+}
+.who {
+  padding-top: 300px;
+  h4 {
+    color: rgb(247, 78, 161);
+    font-family: Circular, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-bottom: 4.5rem;
+  }
+  h3 {
+    color: rgb(247, 78, 161);
+    text-decoration: none;
+    padding: 0px 0 0 50px;
+    font-weight: bold;
+  }
+  button {
+    @extend %button;
+    margin-left: 60px;
+  }
+}
+
+// how
+
+.howRow {
+  padding-top: 230px;
+}
+.how {
+  padding-top: 300px;
+  h4 {
+    color: rgb(247, 78, 161);
+    font-family: Circular, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  h3 {
+    color: rgb(247, 78, 161);
+    text-decoration: none;
+    padding: 10px 0 0 50px;
+    font-weight: bold;
+  }
+  button {
+    @extend %button;
+    margin-left: 60px;
+  }
+}
+
+// what
+.whatRow {
+  padding-top: 230px;
+}
+.what {
+  padding-top: 150px;
+  h4 {
+    color: rgb(247, 78, 161);
+    font-family: Circular, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    color: rgb(135, 135, 135);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    display: inline-block;
+    // margin-top: 1rem;
+    margin-left: 2.5rem;
+  }
+  button {
+    @extend %button;
+    margin-left: 60px;
+  }
+}
+
+// blog
+
+.blogCom {
+  span {
+    color: rgb(247, 78, 161);
+    font-family: $fontHead;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+    line-height: 1.75;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4.5rem;
+    letter-spacing: -0.075rem;
+    transition: color 0.25s ease 0s;
+    margin-top: 1rem;
+  }
+  p {
+    color: rgb(135, 135, 135);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+}
+
+// Cleint
+
+.clientRow {
+  padding-top: 150px;
+  h4 {
+    color: rgb(247, 78, 161);
+    font-family: Circular, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+// read
+
+.readRow {
+  padding-top: 150px;
+  h4 {
+    color: rgb(247, 78, 161);
+    font-family: Circular, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  button {
+    @extend %button;
+    // margin-left: 60px;
+    margin: 10% 0 10% 0;
+  }
+}
+
+.readCom {
+  span {
+    color: rgb(247, 78, 161);
+    font-family: $fontHead;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-right: 1.5rem;
+    line-height: 1.75;
+    padding: 2%;
+  }
+  h2 {
+    color: rgb(135, 135, 135);
+    font-family: $fontHead;
+    font-size: 1.8rem;
+    padding: 2% 5% 0 1%;
+    line-height: 1.33;
+    letter-spacing: -0.075rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0px;
+    transition: color 0.25s ease 0s;
+  }
+}
+
+// footer
+
+.footRow {
+  background-color: black;
+  padding: 5% 0 5% 0;
+  ul {
+    li {
+      font-size: 1.5rem;
+      color: rgb(255, 255, 255);
+      transition: color 0.2s ease-in-out 0s;
+      list-style: none;
+      line-height: 1.6;
+      font-family: $fontHead;
+    }
+    .home {
+      border-bottom: 1px solid white;
+      width: 60px;
+    }
+  }
+
+  .footRowTwo {
+    span {
+      color: rgb(247, 78, 161);
+      font-family: $fontHead;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      margin-right: 1.5rem;
+      line-height: 1.75;
+      // padding: 2%;
+    }
+    ul {
+      padding: 0px;
+      margin-top: 20px;
+      li {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        font-family: $fontHead;
+        color: rgb(255, 255, 255);
+        transition: color 0.2s ease-in-out 0s;
+      }
+    }
+  }
+
+  .footRowThree {
+    @extend .footRowTwo;
+    ul {
+      li {
+        line-height: 2.5;
+      }
+    }
+  }
+
+  .footSoc {
+    text-align: right;
+    span {
+      font-size: 1.4rem;
+      line-height: 1.25;
+      letter-spacing: 0.2rem;
+      // margin-top: 1.5rem;
+      text-transform: uppercase;
+      color: rgb(247, 78, 161);
+      font-family: Sofia, sans-serif;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-family: Circular, sans-serif;
+      font-weight: 700;
+      margin: 0px 0px 4.5rem;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: color 0.2s ease-in-out 0s;
+    }
+    div {
+      background-color: transparent;
+      border-top: 0px;
+      border-right: 0px;
+      border-left: 0px;
+      border-image: initial;
+      margin: 0px 0px 6rem;
+      transition: color 0.15s ease-in-out 0s;
+      color: rgb(255, 255, 255) !important;
+      font-family: Sofia, sans-serif !important;
+      font-size: 3rem !important;
+      line-height: 0.9 !important;
+      border-bottom: 0px !important;
+    }
+
+    .socRow {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}
