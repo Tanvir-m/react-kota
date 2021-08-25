@@ -6,7 +6,7 @@ const How = () => {
     <>
       <Row className={style.howRow}>
         <Col md={{ span: 5, offset: 1 }} className={style.how}>
-          <h4>01. WHO</h4>
+          <h4>02. How</h4>
           <h2>KOTA are specialists in:</h2>
           <h3>Creative Web Design</h3>
           <h3>Web Development</h3>
@@ -17,12 +17,12 @@ const How = () => {
 
           <button>VIEW OUR SERVICES</button>
         </Col>
-        <Col md={6}>
+        <Col md={6} style={{ padding: '0px' }}>
           <img
             src={process.env.PUBLIC_URL + './img/how.png'}
             alt=""
             width="100%"
-            height="auto"
+            height="1150"
           />
         </Col>
       </Row>

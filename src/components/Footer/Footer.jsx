@@ -8,8 +8,8 @@ import { TiSocialLinkedinCircular } from 'react-icons/ti';
 const Footer = () => {
   return (
     <>
-      <Container fluid className={style.footRow}>
-        <Row>
+      <Container fluid style={{ padding: '0px' }}>
+        <Row className={style.footRow}>
           <Col md={{ span: 2, offset: 1 }}>
             <ul>
               <li className={style.home}>Home</li>
@@ -37,19 +37,20 @@ const Footer = () => {
               <li>New York</li>
             </ul>
           </Col>
-          <Col md={{ span: 3, offset: 2 }} className={style.footSoc}>
+          <Col md={{ span: 3, offset: 1 }} className={style.footSoc}>
             <span>FOLLOW</span>
-            <Row className={style.socRow}>
-              <Col sm={{ span: 2 }}>
+            <Row className={`${style.socRow} pt-4`}>
+              <Col sm={4} className={style.footCol}></Col>
+              <Col sm={{ span: 2 }} className={style.footCol}>
                 <AiFillTwitterCircle />
               </Col>
-              <Col sm={2}>
+              <Col sm={2} className={style.footCol}>
                 <FiInstagram />
               </Col>
-              <Col sm={2}>
+              <Col sm={2} className={style.footCol}>
                 <RiFacebookCircleFill />
               </Col>
-              <Col sm={2}>
+              <Col sm={2} className={style.footCol}>
                 <TiSocialLinkedinCircular />
               </Col>
             </Row>

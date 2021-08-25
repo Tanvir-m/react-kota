@@ -1,0 +1,487 @@
+.bring button, .who button, .how button, .what button, .readRow button {
+  background: transparent;
+  border: 0.2rem solid #f74ea1;
+  padding: 1.5rem 3rem;
+  color: #f74ea1;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  border-radius: 3rem;
+  margin-top: 2.5rem;
+  display: inline-block;
+  min-width: 14rem;
+  text-align: center;
+  -webkit-transition: background-color 0.25s ease 0s, color 0.25s ease 0s;
+  transition: background-color 0.25s ease 0s, color 0.25s ease 0s;
+}
+
+.bring button:hover, .who button:hover, .how button:hover, .what button:hover, .readRow button:hover {
+  background: #f74ea1;
+  color: white;
+}
+
+.banRow {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -10;
+}
+
+.bring h1 {
+  margin-top: 300px;
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 7rem;
+  line-height: 1.15;
+  letter-spacing: -0.075rem;
+  max-width: 14ch;
+}
+
+.bring p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+}
+
+.whoRow {
+  padding-top: 230px;
+}
+
+.who {
+  padding-top: 200px;
+}
+
+.who h4 {
+  color: #f74ea1;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-left: 100px;
+}
+
+.who h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 2.5rem;
+  padding-left: 130px;
+}
+
+.who p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  display: inline-block;
+  padding-left: 130px;
+  padding-right: 10px;
+}
+
+.who button {
+  margin-left: 130px;
+  padding: 1.2rem 3rem;
+  font-size: 17px;
+}
+
+.howRow {
+  padding-top: 230px;
+}
+
+.how {
+  padding-top: 300px;
+}
+
+.how h4 {
+  color: #f74ea1;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+}
+
+.how h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 2.5rem;
+  padding-right: 40px;
+  padding-left: 30px;
+}
+
+.how h3 {
+  color: #f74ea1;
+  text-decoration: none;
+  padding: 10px 10px 0 0px;
+  font-weight: bold;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.how h3:hover {
+  opacity: 0.6;
+}
+
+.how button {
+  margin-left: 30px;
+  padding: 1.2rem 3rem;
+  font-size: 17px;
+}
+
+.whatRow {
+  padding-top: 230px;
+}
+
+.what {
+  padding-top: 150px;
+}
+
+.what h4 {
+  color: #f74ea1;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.what h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.075rem;
+  margin-left: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.what p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  display: inline-block;
+  margin-left: 2.5rem;
+}
+
+.what button {
+  margin-left: 60px;
+  padding: 1.2rem 3rem;
+  font-size: 17px;
+}
+
+.blogCom span {
+  color: #f74ea1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  line-height: 1.75;
+}
+
+.blogCom h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: -0.075rem;
+  -webkit-transition: color 0.25s ease 0s;
+  transition: color 0.25s ease 0s;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.blogCom h2:hover {
+  color: #f74ea1;
+}
+
+.blogCom p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.blogCom img {
+  background-color: #f74ea1;
+}
+
+.blogCom img:hover {
+  opacity: 0.5;
+  background-color: #f74ea1;
+  cursor: pointer;
+}
+
+.clientRow {
+  padding-top: 150px;
+}
+
+.clientRow h4 {
+  color: #f74ea1;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.clientRow h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.075rem;
+  margin-left: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.readRow {
+  padding-top: 150px;
+}
+
+.readRow h4 {
+  color: #f74ea1;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.readRow h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.075rem;
+  margin-bottom: 3rem;
+}
+
+.readRow button {
+  margin: 10% 0 10% 0;
+}
+
+.readCom span {
+  color: #f74ea1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
+  line-height: 1.75;
+  padding: 2%;
+}
+
+.readCom h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.33;
+  letter-spacing: -0.075rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0px;
+  -webkit-transition: color 0.25s ease 0s;
+  transition: color 0.25s ease 0s;
+}
+
+.footRow {
+  background-color: black;
+  padding: 5% 0 5% 0;
+  margin-top: 150px;
+}
+
+.footRow ul li {
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transition: color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s;
+  list-style: none;
+  line-height: 1.6;
+  font-family: "Rubik", sans-serif;
+}
+
+.footRow ul .home {
+  border-bottom: 1px solid white;
+  width: 60px;
+}
+
+.footRow .footRowTwo span, .footRow .footRowThree span {
+  color: #f74ea1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
+  line-height: 1.75;
+}
+
+.footRow .footRowTwo ul, .footRow .footRowThree ul {
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.footRow .footRowTwo ul li, .footRow .footRowThree ul li {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  -webkit-transition: color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s;
+}
+
+.footRow .footRowThree ul li {
+  line-height: 2.5;
+}
+
+.footRow .footSoc {
+  text-align: right;
+}
+
+.footRow .footSoc span {
+  font-size: 1.4rem;
+  line-height: 1.25;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #f74ea1;
+  font-family: Sofia, sans-serif;
+}
+
+.footRow .footSoc p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Circular, sans-serif;
+  font-weight: 700;
+  margin: 0px 0px 4.5rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s;
+}
+
+.footRow .footSoc div {
+  background-color: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  -o-border-image: initial;
+     border-image: initial;
+  margin: 0px 0px 6rem;
+  -webkit-transition: color 0.15s ease-in-out 0s;
+  transition: color 0.15s ease-in-out 0s;
+  color: white !important;
+  font-family: Sofia, sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 0.9 !important;
+  border-bottom: 0px !important;
+}
+
+.footRow .footSoc .socRow {
+  margin: 0px;
+}
+
+.footRow .footSoc .socRow .footCol {
+  margin-bottom: 50px;
+}
+
+.workRow {
+  position: absolute;
+  z-index: -1;
+}
+
+.workText h1 {
+  margin-top: 300px;
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  line-height: 1.15;
+  letter-spacing: -0.075rem;
+  max-width: 16ch;
+}
+
+.workText p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  display: inline-block;
+  margin-top: 1rem;
+  max-width: 58ch;
+}
+
+.tabs ul {
+  margin: 0px 0px 150px 0px;
+  padding: 0px;
+}
+
+.tabs ul li {
+  list-style: none;
+  display: inline;
+  padding-right: 35px;
+  font-size: 1.7rem;
+  color: #f74ea1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs ul .active {
+  border: 2px solid #f74ea1;
+  text-align: center;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+}
+
+.GalCom span {
+  color: #f74ea1;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  line-height: 1.75;
+}
+
+.GalCom h2 {
+  color: #878787;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  letter-spacing: -0.075rem;
+  -webkit-transition: color 0.25s ease 0s;
+  transition: color 0.25s ease 0s;
+  margin-top: 1rem;
+}
+
+.GalCom p {
+  color: #878787;
+  font-family: Circular, sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=style.module.css.map */

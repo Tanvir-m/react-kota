@@ -5,7 +5,7 @@ const Banner = () => {
   const url = process.env.PUBLIC_URL;
   return (
     <>
-      <Container fluid>
+      <Container fluid style={{ padding: '0px' }}>
         <Row>
           <img className={style.banRow} src={url + './img/banner.png'} alt="" />
           <Col className={style.bring} md={{ span: 6, offset: 6 }}>

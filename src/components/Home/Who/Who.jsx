@@ -6,7 +6,7 @@ const Who = () => {
   return (
     <>
       <Row className={style.whoRow}>
-        <Col md={6}>
+        <Col md={6} style={{ padding: '0px' }}>
           <img src={url + './img/who.png'} alt="" width="100%" height="auto" />
         </Col>
         <Col md={6} className={style.who}>

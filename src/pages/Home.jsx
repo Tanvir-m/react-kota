@@ -6,21 +6,23 @@ import Blog from '../components/Home/Blog/Blog';
 import Clients from '../components/Home/Clients/Clients';
 import Read from '../components/Home/Read/Read';
 import Footer from '../components/Footer/Footer';
+import Navbar from '../components/Navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 
 const Home = () => {
   return (
     <>
-      <Container fluid>
-        <Banner />
-        <Who />
-        <How />
-        <What />
+      <Container fluid style={{ padding: '0px' }}>
+        <Navbar />
+        {/* <Banner /> */}
+        {/* <Who /> */}
+        {/* <How /> */}
+        {/* <What /> */}
         <Blog />
         <Clients />
         <Read />
-        <Footer />
+        {/* <Footer /> */}
       </Container>
     </>
   );
