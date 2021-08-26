@@ -60,8 +60,12 @@ const Navbar = () => {
               <Link to="/work" style={{ textDecoration: 'none' }}>
                 <NavbarLi>Work</NavbarLi>
               </Link>
-              <NavbarLi>Services</NavbarLi>
-              <NavbarLi>Studio</NavbarLi>
+              <Link to="/services" style={{ textDecoration: 'none' }}>
+                <NavbarLi>Services</NavbarLi>
+              </Link>
+              <Link to="/studio" style={{ textDecoration: 'none' }}>
+                <NavbarLi>Studio</NavbarLi>
+              </Link>
               <NavbarLi>Blog</NavbarLi>
               <NavbarLi>Contact</NavbarLi>
             </NavbarUl>

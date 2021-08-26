@@ -3,7 +3,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 $fontHead: 'Rubik', sans-serif;
 $orange: rgb(247, 78, 161);
-$dark: rgb(135, 135, 135);
+$dark: #878787;
 
 @import '_Home.scss';
 @import '_Work.scss';
+@import '_services.scss';
+@import '_studio.scss';

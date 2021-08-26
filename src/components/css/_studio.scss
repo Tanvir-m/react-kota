@@ -1,0 +1,107 @@
+.vidRow {
+  .playBtn {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    margin-top: 25%;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover {
+      font-size: 130px;
+      color: $orange;
+    }
+  }
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.stuSer {
+  h2 {
+    color: $dark;
+    font-family: $fontHead;
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+    // margin-left: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    color: rgb(135, 135, 135);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+  }
+  button {
+    @extend %button;
+    // margin-left: 60px;
+    margin: 5% 0 5% 0;
+  }
+}
+
+.galCom {
+  img {
+    border: 5px solid white;
+  }
+}
+
+.teamRow {
+  margin-top: 250px !important;
+  p {
+    color: $dark;
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-left: 25px;
+    padding-top: 80px;
+  }
+}
+
+.teamGal {
+  width: 300px;
+  height: 300px;
+}
+
+.teamGalSm {
+  width: 200px;
+  height: 200px;
+}
+
+.whyChoose {
+  margin: 250px 0 0px 0;
+  padding: 100px 0 200px 0;
+  background-color: $orange;
+  h3 {
+    position: relative;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    font-family: $fontHead;
+    font-size: 6rem;
+    text-align: center;
+    padding: 10rem 0px 5rem;
+    margin-bottom: 5rem;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    font-family: $fontHead;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    margin-top: -250px;
+    pointer-events: none;
+  }
+  p {
+    color: rgb(255, 255, 255);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 2;
+  }
+}

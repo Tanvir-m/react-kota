@@ -15,14 +15,14 @@ const Home = () => {
     <>
       <Container fluid style={{ padding: '0px' }}>
         <Navbar />
-        {/* <Banner /> */}
-        {/* <Who /> */}
-        {/* <How /> */}
-        {/* <What /> */}
+        <Banner />
+        <Who />
+        <How />
+        <What />
         <Blog />
         <Clients />
         <Read />
-        {/* <Footer /> */}
+        <Footer />
       </Container>
     </>
   );

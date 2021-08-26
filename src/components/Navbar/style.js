@@ -29,14 +29,16 @@ export const Bar = styled.div`
   color: ${(props) => (props.white ? 'white' : 'rgb(135, 135, 135)')};
   margin-top: -20px;
   cursor: pointer;
+  /* z-index: 11; */
 `;
 
 export const NavBar = styled.div`
   background-color: rgb(247, 78, 161);
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   padding: 0px;
+  /* z-index: 10; */
 `;
 
 export const NavbarUl = styled.ul`
