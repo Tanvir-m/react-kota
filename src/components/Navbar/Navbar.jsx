@@ -3,6 +3,7 @@ import { RiBarChartHorizontalLine } from 'react-icons/ri';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,19 +18,25 @@ const Navbar = () => {
       {navbar && (
         <>
           <Nav>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <img
-                src={process.env.PUBLIC_URL + './img/logo.svg'}
-                alt=""
-                height="90px"
-                width="90px"
-              />
-            </Link>
-            <Ul>
-              <Link to="/work" style={{ textDecoration: 'none' }}>
-                <Li>Work</Li>
+            <Slide left>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <img
+                  src={process.env.PUBLIC_URL + './img/logo.svg'}
+                  alt=""
+                  height="90px"
+                  width="90px"
+                />
               </Link>
-              <Li>Contact</Li>
+            </Slide>
+            <Ul>
+              <Slide right>
+                <div>
+                  <Link to="/work" style={{ textDecoration: 'none' }}>
+                    <Li>Work</Li>
+                  </Link>
+                  <Li>Contact</Li>
+                </div>
+              </Slide>
               <Bar>
                 <RiBarChartHorizontalLine onClick={barOnclickHandler} />
               </Bar>

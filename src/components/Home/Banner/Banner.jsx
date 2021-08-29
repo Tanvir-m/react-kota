@@ -1,5 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const Banner = () => {
   const url = process.env.PUBLIC_URL;
@@ -7,10 +9,21 @@ const Banner = () => {
     <>
       <Container fluid style={{ padding: '0px' }}>
         <Row>
-          <img className={style.banRow} src={url + './img/banner.png'} alt="" />
+          <Zoom top>
+            <img
+              className={style.banRow}
+              src={url + './img/banner.png'}
+              alt=""
+            />
+          </Zoom>
           <Col className={style.bring} md={{ span: 6, offset: 6 }}>
-            <h1>Bringing Brands to Life Digitally.</h1>
-            <button>VIEW OUR WORK</button>
+            <Fade bottom>
+              <h1>
+                Bringing Brands <br /> to Life Digitally.
+              </h1>
+
+              <button>VIEW OUR WORK</button>
+            </Fade>
           </Col>
           <Col md={4}>
             <Row>

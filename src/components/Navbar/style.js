@@ -9,6 +9,7 @@ export const Nav = styled.div`
 
 export const Ul = styled.ul`
   float: right;
+  margin-top: -60px;
 `;
 
 export const Li = styled.li`

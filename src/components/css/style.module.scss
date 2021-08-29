@@ -9,3 +9,17 @@ $dark: #878787;
 @import '_Work.scss';
 @import '_services.scss';
 @import '_studio.scss';
+
+// body {
+//   background-color: white;
+//   transition: all 3s ease;
+// }
+
+.bgColorWhite {
+  background-color: white;
+  transition: all 3s ease;
+}
+.bgColorBlack {
+  background-color: black;
+  transition: all 3s ease;
+}
