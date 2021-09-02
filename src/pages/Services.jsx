@@ -8,7 +8,7 @@ import Card from '../components/Services/Card/Card';
 const Services = () => {
   return (
     <>
-      <Container fluid style={{ padding: '0px' }}>
+      <Container fluid>
         <Navbar />
         <ServicesBan />
         <Card />

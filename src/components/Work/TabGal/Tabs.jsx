@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useContext } from 'react';
 import { Context } from '../../../context/context';
 import style from '../../css/style.module.scss';
+import Fade from 'react-reveal/Fade';
 
 const Tabs = () => {
   const context = useContext(Context);
@@ -59,23 +60,25 @@ const Tabs = () => {
   };
   return (
     <>
-      <ul>
-        <li onClick={allClickHandler} className={actAll && `${style.active}`}>
-          All
-        </li>
-        <li
-          onClick={brandClickHandler}
-          className={actBrand && `${style.active}`}
-        >
-          Branding
-        </li>
-        <li onClick={dmClickHandler} className={actDm && `${style.active}`}>
-          Digital Marketing
-        </li>
-        <li onClick={webClickHandler} className={actWeb && `${style.active}`}>
-          Websites
-        </li>
-      </ul>
+      <Fade bottom>
+        <ul>
+          <li onClick={allClickHandler} className={actAll && `${style.active}`}>
+            All
+          </li>
+          <li
+            onClick={brandClickHandler}
+            className={actBrand && `${style.active}`}
+          >
+            Branding
+          </li>
+          <li onClick={dmClickHandler} className={actDm && `${style.active}`}>
+            Digital Marketing
+          </li>
+          <li onClick={webClickHandler} className={actWeb && `${style.active}`}>
+            Websites
+          </li>
+        </ul>
+      </Fade>
     </>
   );
 };

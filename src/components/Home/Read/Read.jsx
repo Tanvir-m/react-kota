@@ -1,6 +1,7 @@
 import { Row, Col, Container } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
 import ReadCom from './ReadCom';
+import Slide from 'react-reveal/Slide';
 
 const Read = () => {
   return (
@@ -9,7 +10,9 @@ const Read = () => {
         <Row>
           <Col md={{ span: 5, offset: 1 }}>
             <h4>04. READ</h4>
-            <h2>Our Latest Articles</h2>
+            <Slide bottom>
+              <h2>Our Latest Articles</h2>
+            </Slide>
           </Col>
         </Row>
         <Container>
@@ -32,7 +35,9 @@ const Read = () => {
             />
           </Row>
           <center>
-            <button>VIEW ALL BLOG POSTS</button>
+            <Slide bottom>
+              <button>VIEW ALL BLOG POSTS</button>
+            </Slide>
           </center>
         </Container>
       </Container>

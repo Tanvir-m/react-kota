@@ -25,6 +25,7 @@
   width: 100%;
   height: auto;
   position: absolute;
+  padding: 0px;
   // z-index: -10;
 }
 
@@ -54,10 +55,14 @@
   }
 }
 
-// who
-.whoRow {
-  padding-top: 230px;
+.award {
+  padding: 15rem 0 7rem 0;
 }
+
+// who
+// .whoRow {
+//   // padding-top: 230px;
+// }
 .who {
   padding-top: 200px;
   h4 {
@@ -109,6 +114,11 @@
 
 .howRow {
   padding-top: 230px;
+  img {
+    .img {
+      position: relative;
+    }
+  }
 }
 .how {
   padding-top: 300px;
@@ -166,7 +176,7 @@
     padding: 10px;
   }
   h2 {
-    color: $dark;
+    color: #fff;
     font-family: $fontHead;
     font-size: 4rem;
     letter-spacing: -0.075rem;
@@ -174,7 +184,7 @@
     margin-bottom: 3rem;
   }
   p {
-    color: $dark;
+    color: #fff;
     font-family: Circular, sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
@@ -207,7 +217,7 @@
     line-height: 1.75;
   }
   h2 {
-    color: $dark;
+    color: #fff;
     font-family: $fontHead;
     font-size: 4.5rem;
     letter-spacing: -0.075rem;
@@ -219,7 +229,7 @@
     }
   }
   p {
-    color: $dark;
+    color: #fff;
     font-family: Circular, sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
@@ -232,6 +242,16 @@
       background-color: $orange;
       cursor: pointer;
     }
+  }
+}
+
+.hove {
+  width: 100%;
+  height: auto;
+  transition: 500ms;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($color: $orange, $alpha: 0.5);
   }
 }
 

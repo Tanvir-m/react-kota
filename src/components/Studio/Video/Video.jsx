@@ -6,7 +6,7 @@ const Video = () => {
   return (
     <>
       <Row className={style.vidRow} style={{ margin: '250px 0 200px 0' }}>
-        <Col md={12}>
+        <Col md={12} style={{ padding: '0px' }}>
           <center>
             <BiPlayCircle className={style.playBtn} />
           </center>

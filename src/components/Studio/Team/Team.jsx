@@ -20,6 +20,7 @@ const Team = () => {
             </p>
           </Col>
         </Row>
+
         <Row>
           <TeamCom img="tm1" marTop="200px" pad="p-4" />
           <TeamCom img="tm2" marTop="100px" />

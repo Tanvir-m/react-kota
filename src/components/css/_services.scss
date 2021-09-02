@@ -4,6 +4,7 @@
 
 .cardCom {
   text-align: center;
+  cursor: pointer;
   h2 {
     color: rgb(135, 135, 135);
     font-family: Sofia, sans-serif;
@@ -17,5 +18,9 @@
     font-family: Circular, sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }

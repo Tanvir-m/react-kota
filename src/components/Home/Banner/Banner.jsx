@@ -14,6 +14,7 @@ const Banner = () => {
               className={style.banRow}
               src={url + './img/banner.png'}
               alt=""
+              style={{ padding: '0px' }}
             />
           </Zoom>
           <Col className={style.bring} md={{ span: 6, offset: 6 }}>
@@ -25,30 +26,38 @@ const Banner = () => {
               <button>VIEW OUR WORK</button>
             </Fade>
           </Col>
-          <Col md={4}>
+          <Col
+            md={{ span: 3, offset: 1 }}
+            className={style.award}
+            style={{ zIndex: '10' }}
+          >
             <Row>
-              <Col>
+              <Col sm={3}>
                 <img
-                  src={process.env.PUBLIC_URL + './img/banOne.png}'}
+                  src={url + './img/awdOne.webp'}
                   alt=""
+                  className="img-fluid p-2 text-center"
                 />
               </Col>
-              <Col>
+              <Col sm={3}>
                 <img
-                  src={process.env.PUBLIC_URL + './img/banOne.png}'}
+                  src={url + './img/awdTwo.webp'}
                   alt=""
+                  className="img-fluid p-2 text-center"
                 />
               </Col>
-              <Col>
+              <Col sm={3}>
                 <img
-                  src={process.env.PUBLIC_URL + './img/BanThree.png}'}
+                  src={url + './img/awdThree.webp'}
                   alt=""
+                  className="img-fluid p-2 text-center"
                 />
               </Col>
-              <Col>
+              <Col sm={3}>
                 <img
-                  src={process.env.PUBLIC_URL + './img/banOne.png}'}
+                  src={url + './img/awdFour.webp'}
                   alt=""
+                  className="img-fluid p-2 text-center"
                 />
               </Col>
             </Row>

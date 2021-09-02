@@ -14,6 +14,7 @@ const Who = () => {
               alt=""
               width="100%"
               height="1150"
+              className={style.img}
             />
           </Slide>
         </Col>

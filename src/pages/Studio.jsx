@@ -9,11 +9,25 @@ import Gallery from '../components/Studio/Gallery/Gallery';
 import Team from '../components/Studio/Team/Team';
 import Clients from '../components/Studio/Clients/Clients';
 import WhyChoose from '../components/Studio/WhyChoose/WhyChoose';
+import { useState } from 'react';
+import style from '../components/css/style.module.scss';
 
 const Studio = () => {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 3300 && window.scrollY <= 5000) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
   return (
     <>
-      <Container fluid style={{ padding: '0px' }}>
+      <Container
+        fluid
+        className={colorChange ? style.bgColorBlack : style.bgColorWhite}
+      >
         <Navbar />
         <StudioBan />
         <Video />

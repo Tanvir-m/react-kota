@@ -15,7 +15,7 @@ import style from '../components/css/style.module.scss';
 const Home = () => {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 3300 && window.scrollY <= 8900) {
+    if (window.scrollY >= 3300 && window.scrollY <= 9300) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -28,7 +28,7 @@ const Home = () => {
       <Container
         fluid
         className={colorChange ? style.bgColorBlack : style.bgColorWhite}
-        style={{ padding: '0px' }}
+        // style={{ padding: '0px' }}
       >
         <Navbar />
         <Banner />

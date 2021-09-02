@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar/Navbar';
 const Work = () => {
   return (
     <>
-      <Container fluid style={{ padding: '0px' }}>
+      <Container fluid>
         <Navbar />
         <WorkCom />
         <TabGal />

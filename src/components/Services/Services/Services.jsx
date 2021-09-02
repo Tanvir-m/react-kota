@@ -1,5 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
+import Slide from 'react-reveal/Slide';
 
 const Services = () => {
   return (
@@ -10,6 +11,7 @@ const Services = () => {
         alt=""
       />
       <Col className={style.workText} md={{ span: 6, offset: 6 }}>
+        <Slide bottom>
         <h1>We are experts in bringing brands to life digitally.</h1>
         <p>
           KOTA is a progressive and insightful design agency, technically and
@@ -18,6 +20,7 @@ const Services = () => {
           and immersive digital experiences that bring you a return on
           creativity.
         </p>
+        </Slide>
       </Col>
     </Row>
   );
