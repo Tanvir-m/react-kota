@@ -1,6 +1,11 @@
-import { Nav, Ul, Li, Bar, NavBar, NavbarUl, NavbarLi } from './style';
+import { Nav, Ul, Li, Bar, NavBar, NavbarUl, NavbarLi, Icons } from './style';
 import { RiBarChartHorizontalLine } from 'react-icons/ri';
 import { FaTimes } from 'react-icons/fa';
+
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { FiInstagram } from 'react-icons/fi';
+import { RiFacebookCircleFill } from 'react-icons/ri';
+import { TiSocialLinkedinCircular } from 'react-icons/ti';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
@@ -76,6 +81,18 @@ const Navbar = () => {
               <NavbarLi>Blog</NavbarLi>
               <NavbarLi>Contact</NavbarLi>
             </NavbarUl>
+            <Icons left>
+              <AiFillTwitterCircle />
+            </Icons>
+            <Icons>
+              <FiInstagram />
+            </Icons>
+            <Icons>
+              <RiFacebookCircleFill />
+            </Icons>
+            <Icons>
+              <TiSocialLinkedinCircular />
+            </Icons>
           </NavBar>
         </>
       )}

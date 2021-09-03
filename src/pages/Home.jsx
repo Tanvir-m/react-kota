@@ -25,12 +25,12 @@ const Home = () => {
 
   return (
     <>
+      <Navbar />
       <Container
         fluid
         className={colorChange ? style.bgColorBlack : style.bgColorWhite}
         // style={{ padding: '0px' }}
       >
-        <Navbar />
         <Banner />
         <Who />
         <How />

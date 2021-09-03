@@ -4,7 +4,7 @@ export const Nav = styled.div`
   width: 100%;
   padding: 3% 3% 3% 3%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 `;
 
 export const Ul = styled.ul`
@@ -28,9 +28,8 @@ export const Bar = styled.div`
   float: right;
   font-size: 3rem;
   color: ${(props) => (props.white ? 'white' : 'rgb(135, 135, 135)')};
-  margin-top: -20px;
+  /* margin-top: -20px; */
   cursor: pointer;
-  /* z-index: 11; */
 `;
 
 export const NavBar = styled.div`
@@ -39,7 +38,7 @@ export const NavBar = styled.div`
   height: 100%;
   position: fixed;
   padding: 0px;
-  /* z-index: 10; */
+  /* z-index: 15 !important; */
 `;
 
 export const NavbarUl = styled.ul`
@@ -60,4 +59,12 @@ export const NavbarLi = styled.li`
   &:hover {
     color: white;
   }
+`;
+
+export const Icons = styled.div`
+  display: inline-flex;
+  margin-top: 50px;
+  font-size: 45px;
+  color: white;
+  margin-left: ${(props) => (props.left ? '60px' : '30px')};
 `;
