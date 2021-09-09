@@ -13,19 +13,18 @@ const GalCom = (props) => {
           marginTop: `${props.mt}`,
         }}
       >
-        {props.btn && <Tabs />}
         <Slide bottom>
-        <img
-          src={process.env.PUBLIC_URL + `./img/${props.img}`}
-          width="100%"
-          height="auto"
-        />
+          <img
+            src={process.env.PUBLIC_URL + `./img/${props.img}`}
+            width="100%"
+            height="auto"
+          />
 
-        <span>{props.one}</span>
-        <span>{props.one}</span>
-        <span>{props.three}</span>
-        <h2>{props.head}</h2>
-        <p>{props.para}</p>
+          <span>{props.one}</span>
+          <span>{props.one}</span>
+          <span>{props.three}</span>
+          <h2>{props.head}</h2>
+          <p>{props.para}</p>
         </Slide>
       </Col>
     </>

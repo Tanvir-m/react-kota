@@ -1,18 +1,23 @@
 import { useContext, useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Context } from '../../../context/context';
 import style from '../../css/style.module.scss';
 import GalCom from './GalCom';
+import Tabs from './Tabs';
 
 const TabGal = () => {
   const contextStore = useContext(Context);
   return (
     <>
       <Row className={style.tabs}>
+        <Col md={{ span: 5, offset: 7 }}>
+          <Tabs />
+        </Col>
         {/* All */}
         {contextStore.tabGal.all && (
           <>
             <GalCom
+              mt="-150px"
               span={5}
               offset={1}
               img="work/br1.webp"

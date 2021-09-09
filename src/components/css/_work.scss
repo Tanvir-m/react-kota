@@ -29,26 +29,28 @@
 }
 
 .tabs {
-  // position: relative;
+  position: relative;
+  z-index: 1000 !important;
   ul {
-    margin: 0px 0px 150px 0px;
-    padding: 0px;
+    margin: 100px 0px 30px 0px;
+    // padding: 0px;
+    z-index: 1000 !important;
     li {
       list-style: none;
       display: inline;
-      padding-right: 35px;
+      margin: 10px 20px;
+      padding: 5px 10px;
       font-size: 1.7rem;
       color: $orange;
       font-weight: bold;
       cursor: pointer;
+      transition: 0.5s ease-in-out;
     }
+
     .active {
-      border: 2px solid $orange;
+      border: 3px solid $orange;
       text-align: center;
-      padding-left: 30px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-right: 15px;
+      transition: 0.5s ease-in-out;
     }
   }
 }

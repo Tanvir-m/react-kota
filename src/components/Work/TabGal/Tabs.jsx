@@ -60,25 +60,25 @@ const Tabs = () => {
   };
   return (
     <>
-      <Fade bottom>
-        <ul>
-          <li onClick={allClickHandler} className={actAll && `${style.active}`}>
-            All
-          </li>
-          <li
-            onClick={brandClickHandler}
-            className={actBrand && `${style.active}`}
-          >
-            Branding
-          </li>
-          <li onClick={dmClickHandler} className={actDm && `${style.active}`}>
-            Digital Marketing
-          </li>
-          <li onClick={webClickHandler} className={actWeb && `${style.active}`}>
-            Websites
-          </li>
-        </ul>
-      </Fade>
+      {/* <Fade bottom> */}
+      <ul className={style.tabUl}>
+        <li onClick={allClickHandler} className={actAll && `${style.active}`}>
+          All
+        </li>
+        <li
+          onClick={brandClickHandler}
+          className={actBrand && `${style.active}`}
+        >
+          Branding
+        </li>
+        <li onClick={dmClickHandler} className={actDm && `${style.active}`}>
+          Digital Marketing
+        </li>
+        <li onClick={webClickHandler} className={actWeb && `${style.active}`}>
+          Websites
+        </li>
+      </ul>
+      {/* </Fade> */}
     </>
   );
 };
