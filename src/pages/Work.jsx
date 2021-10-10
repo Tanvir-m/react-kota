@@ -3,13 +3,17 @@ import { Container } from 'react-bootstrap';
 import WorkCom from '../components/Work/Work/Work';
 import TabGal from '../components/Work/TabGal/TabGal';
 import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Navbar/Navbar';
+import NavbarTwo from '../components/Navbar/NavbarTwo';
+import { useEffect } from 'react';
 
 const Work = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
+      <NavbarTwo />
       <Container fluid>
-        <Navbar />
         <WorkCom />
         <TabGal />
         <Footer />

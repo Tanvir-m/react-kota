@@ -6,13 +6,18 @@ import Blog from '../components/Home/Blog/Blog';
 import Clients from '../components/Home/Clients/Clients';
 import Read from '../components/Home/Read/Read';
 import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Navbar/Navbar';
+// import Navbar from '../components/Navbar/Navbar';
+import NavbarTwo from '../components/Navbar/NavbarTwo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from '../components/css/style.module.scss';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 3300 && window.scrollY <= 9300) {
@@ -25,11 +30,10 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      <NavbarTwo />
       <Container
         fluid
         className={colorChange ? style.bgColorBlack : style.bgColorWhite}
-        // style={{ padding: '0px' }}
       >
         <Banner />
         <Who />

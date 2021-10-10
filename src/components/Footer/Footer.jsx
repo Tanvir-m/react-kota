@@ -6,6 +6,7 @@ import { RiFacebookCircleFill } from 'react-icons/ri';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 
 const Footer = () => {
+  const url = process.env.PUBLIC_URL;
   return (
     <>
       <Container fluid style={{ padding: '0px' }}>
@@ -57,6 +58,47 @@ const Footer = () => {
             <p>Sign up to our newsletter</p>
             <div>hello@kota.co.uk</div>
           </Col>
+
+          <Row className="mt-5">
+            <Col sm={{ span: 1, offset: 1 }}>
+              <img
+                src={url + './img/footer/1.webp'}
+                alt=""
+                className="img-fluid p-2 text-center"
+              />
+            </Col>
+            <Col sm={1}>
+              <img
+                src={url + './img/footer/2.webp'}
+                alt=""
+                className="img-fluid p-2 text-center"
+              />
+            </Col>
+            <Col sm={1}>
+              <img
+                src={url + './img/footer/3.webp'}
+                alt=""
+                className="img-fluid p-2 text-center"
+              />
+            </Col>
+            <Col sm={1}>
+              <img
+                src={url + './img/footer/4.webp'}
+                alt=""
+                className="img-fluid p-2 text-center"
+              />
+            </Col>
+
+            <Col sm={{ span: 2, offset: 5 }}>
+              <img
+                src={process.env.PUBLIC_URL + './img/whiteLogo.svg'}
+                alt=""
+                height="90px"
+                width="90px"
+                style={{ marginTop: '-40px' }}
+              />
+            </Col>
+          </Row>
         </Row>
       </Container>
     </>
