@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-kota/static/css/main.e4d497d0.chunk.css",
+    "main.js": "/react-kota/static/js/main.7625d74c.chunk.js",
+    "main.js.map": "/react-kota/static/js/main.7625d74c.chunk.js.map",
+    "runtime-main.js": "/react-kota/static/js/runtime-main.55409207.js",
+    "runtime-main.js.map": "/react-kota/static/js/runtime-main.55409207.js.map",
+    "static/css/2.818011ed.chunk.css": "/react-kota/static/css/2.818011ed.chunk.css",
+    "static/js/2.a1da0dd0.chunk.js": "/react-kota/static/js/2.a1da0dd0.chunk.js",
+    "static/js/2.a1da0dd0.chunk.js.map": "/react-kota/static/js/2.a1da0dd0.chunk.js.map",
+    "index.html": "/react-kota/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/react-kota/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.e4d497d0.chunk.css.map": "/react-kota/static/css/main.e4d497d0.chunk.css.map",
+    "static/js/2.a1da0dd0.chunk.js.LICENSE.txt": "/react-kota/static/js/2.a1da0dd0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55409207.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.a1da0dd0.chunk.js",
+    "static/css/main.e4d497d0.chunk.css",
+    "static/js/main.7625d74c.chunk.js"
+  ]
+}
