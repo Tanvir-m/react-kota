@@ -6,7 +6,7 @@ const GalCom = (props) => {
     <>
       <Col sm={12} className={style.galCom} style={{ padding: '0px' }}>
         <img
-          src={process.env.PUBLIC_URL + `./img/studio/${props.img}.webp`}
+          src={process.env.PUBLIC_URL + `/img/studio/${props.img}.webp`}
           className="img-fluid"
           alt=""
         />

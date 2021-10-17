@@ -13,7 +13,7 @@ const Video = () => {
 
           <video autoplay loop>
             <source
-              src={process.env.PUBLIC_URL + './img/studio/studVideo.mp4'}
+              src={process.env.PUBLIC_URL + '/img/studio/studVideo.mp4'}
               type="video/mp4"
             />
           </video>

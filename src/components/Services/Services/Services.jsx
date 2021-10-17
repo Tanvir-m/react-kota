@@ -7,7 +7,7 @@ const Services = () => {
     <Row>
       <img
         className={style.workRow}
-        src={process.env.PUBLIC_URL + './img/serBanner.png'}
+        src={process.env.PUBLIC_URL + '/img/serBanner.png'}
         alt=""
       />
       <Col className={style.workText} md={{ span: 6, offset: 6 }}>

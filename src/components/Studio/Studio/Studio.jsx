@@ -8,7 +8,7 @@ const Studio = () => {
       <Row>
         <img
           className={style.workRow}
-          src={process.env.PUBLIC_URL + './img/studio/stuBanner.png'}
+          src={process.env.PUBLIC_URL + '/img/studio/stuBanner.png'}
           alt=""
         />
         <Col className={style.workText} md={{ span: 6, offset: 6 }}>

@@ -12,7 +12,7 @@ const Banner = () => {
           <Zoom top>
             <img
               className={style.banRow}
-              src={url + './img/banner.png'}
+              src={url + '/img/banner.png'}
               alt=""
               style={{ padding: '0px' }}
             />
@@ -34,28 +34,28 @@ const Banner = () => {
             <Row>
               <Col sm={3}>
                 <img
-                  src={url + './img/awdOne.webp'}
+                  src={url + '/img/awdOne.webp'}
                   alt=""
                   className="img-fluid p-2 text-center"
                 />
               </Col>
               <Col sm={3}>
                 <img
-                  src={url + './img/awdTwo.webp'}
+                  src={url + '/img/awdTwo.webp'}
                   alt=""
                   className="img-fluid p-2 text-center"
                 />
               </Col>
               <Col sm={3}>
                 <img
-                  src={url + './img/awdThree.webp'}
+                  src={url + '/img/awdThree.webp'}
                   alt=""
                   className="img-fluid p-2 text-center"
                 />
               </Col>
               <Col sm={3}>
                 <img
-                  src={url + './img/awdFour.webp'}
+                  src={url + '/img/awdFour.webp'}
                   alt=""
                   className="img-fluid p-2 text-center"
                 />

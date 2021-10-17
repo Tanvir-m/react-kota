@@ -10,7 +10,7 @@ const ReadCom = (props) => {
           <Card style={{ width: '25rem', height: '25rem' }}>
             <Card.Img
               variant="top"
-              src={process.env.PUBLIC_URL + `./img/clients/${props.img}.webp`}
+              src={process.env.PUBLIC_URL + `/img/clients/${props.img}.webp`}
             />
             <Card.Body>
               {/* <Card.Title>Card Title</Card.Title> */}
@@ -25,7 +25,7 @@ const ReadCom = (props) => {
         </Slide>
         {/* <img
           className="img-fluid pb-4"
-          src={process.env.PUBLIC_URL + `./img/clients/${props.img}.webp`}
+          src={process.env.PUBLIC_URL + `/img/clients/${props.img}.webp`}
           alt=""
         /> */}
       </Col>

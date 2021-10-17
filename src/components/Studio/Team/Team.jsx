@@ -8,10 +8,7 @@ const Team = () => {
       <Container>
         <Row className={style.teamRow}>
           <Col md={5}>
-            <img
-              src={process.env.PUBLIC_URL + './img/studio/team.svg'}
-              alt=""
-            />
+            <img src={process.env.PUBLIC_URL + '/img/studio/team.svg'} alt="" />
           </Col>
           <Col md={6}>
             <p>

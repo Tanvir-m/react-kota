@@ -8,7 +8,7 @@ const What = () => {
         <Col md={{ span: 4, offset: 2 }}>
           <img
             className="p-5"
-            src={process.env.PUBLIC_URL + './img/work.svg'}
+            src={process.env.PUBLIC_URL + '/img/work.svg'}
             alt=""
             width="100%"
             height="auto"

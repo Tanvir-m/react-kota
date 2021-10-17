@@ -6,7 +6,7 @@ const WhyChooseCom = (props) => {
       <Col md={4}>
         <img
           className="img-fluid"
-          src={process.env.PUBLIC_URL + `./img/studio/${props.img}.webp`}
+          src={process.env.PUBLIC_URL + `/img/studio/${props.img}.webp`}
           alt=""
         />
       </Col>

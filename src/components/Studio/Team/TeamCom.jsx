@@ -10,7 +10,7 @@ const TeamCom = (props) => {
           <img
             style={{ marginTop: props.marTop, marginLeft: props.marLeft }}
             className={`img-fluid ${props.pad}`}
-            src={process.env.PUBLIC_URL + `./img/studio/${props.img}.webp`}
+            src={process.env.PUBLIC_URL + `/img/studio/${props.img}.webp`}
             alt=""
           />
         </Slide>

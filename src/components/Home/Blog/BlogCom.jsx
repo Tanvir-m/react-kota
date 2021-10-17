@@ -15,10 +15,10 @@ const BlogCom = (props) => {
         <Slide bottom>
           <div className={style.hove}>
             <img
-            src={process.env.PUBLIC_URL + `./img/${props.img}`}
-            width="100%"
-            height="auto"
-          />
+              src={process.env.PUBLIC_URL + `/img/${props.img}`}
+              width="100%"
+              height="auto"
+            />
           </div>
           <span>{props.one}</span>
           <span>{props.one}</span>

@@ -6,7 +6,7 @@ const CardCom = (props) => {
     <>
       <Col md={4} className={`${style.cardCom} mt-5`}>
         <img
-          src={process.env.PUBLIC_URL + `./img/services/${props.img}.webp`}
+          src={process.env.PUBLIC_URL + `/img/services/${props.img}.webp`}
           width="100%"
           height="auto"
         />

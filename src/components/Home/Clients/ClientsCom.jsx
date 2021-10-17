@@ -8,7 +8,7 @@ const ClientsCom = (props) => {
           className={`p-${props.p}`}
           height="50px"
           width="auto"
-          src={process.env.PUBLIC_URL + `./img/clients/${props.img}.svg`}
+          src={process.env.PUBLIC_URL + `/img/clients/${props.img}.svg`}
           alt=""
         />
       </Col>

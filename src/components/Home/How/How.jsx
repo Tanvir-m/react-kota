@@ -26,7 +26,7 @@ const How = () => {
         <Col md={6} style={{ padding: '0px' }}>
           <Slide bottom>
             <img
-              src={process.env.PUBLIC_URL + './img/how.png'}
+              src={process.env.PUBLIC_URL + '/img/how.png'}
               alt=""
               width="100%"
               height="1150"

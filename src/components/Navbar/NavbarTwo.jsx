@@ -25,7 +25,7 @@ const NavbarTwo = () => {
           <Slide left>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <img
-                src={process.env.PUBLIC_URL + './img/logo.svg'}
+                src={process.env.PUBLIC_URL + '/img/logo.svg'}
                 alt=""
                 height="90px"
                 width="90px"
@@ -53,7 +53,7 @@ const NavbarTwo = () => {
           <Nav style={{ zIndex: '10000' }}>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <img
-                src={process.env.PUBLIC_URL + './img/whiteLogo.svg'}
+                src={process.env.PUBLIC_URL + '/img/whiteLogo.svg'}
                 alt=""
                 height="90px"
                 width="90px"

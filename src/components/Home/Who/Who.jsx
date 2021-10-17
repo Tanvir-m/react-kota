@@ -10,7 +10,7 @@ const Who = () => {
         <Col md={6} style={{ padding: '0px' }}>
           <Slide bottom>
             <img
-              src={url + './img/who.png'}
+              src={url + '/img/who.png'}
               alt=""
               width="100%"
               height="1150"

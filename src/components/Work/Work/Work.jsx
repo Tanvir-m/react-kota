@@ -8,7 +8,7 @@ const Work = () => {
       <Row>
         <img
           className={style.workRow}
-          src={process.env.PUBLIC_URL + './img/workBanner.png'}
+          src={process.env.PUBLIC_URL + '/img/workBanner.png'}
           alt=""
         />
         <Col className={style.workText} md={{ span: 6, offset: 6 }}>

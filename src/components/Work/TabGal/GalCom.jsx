@@ -15,7 +15,7 @@ const GalCom = (props) => {
       >
         <Slide bottom>
           <img
-            src={process.env.PUBLIC_URL + `./img/${props.img}`}
+            src={process.env.PUBLIC_URL + `/img/${props.img}`}
             width="100%"
             height="auto"
           />
