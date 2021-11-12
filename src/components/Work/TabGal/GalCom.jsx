@@ -1,6 +1,5 @@
 import { Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
-import Tabs from './Tabs';
 import Slide from 'react-reveal/Slide';
 
 const GalCom = (props) => {
@@ -25,6 +24,7 @@ const GalCom = (props) => {
           <span>{props.three}</span>
           <h2>{props.head}</h2>
           <p>{props.para}</p>
+          <p style={{ display: 'none' }}>{props.cat}</p>
         </Slide>
       </Col>
     </>

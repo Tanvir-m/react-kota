@@ -1,6 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
 import TeamCom from './TeamCom';
+import { studio } from '../../Data/Data';
 
 const Team = () => {
   return (
@@ -19,20 +20,14 @@ const Team = () => {
         </Row>
 
         <Row>
-          <TeamCom img="tm1" marTop="200px" pad="p-4" />
-          <TeamCom img="tm2" marTop="100px" />
-          <TeamCom img="tm3" marTop="-100px" />
-          <TeamCom img="tm4" marTop="0px" pad="p-4" />
-
-          <TeamCom img="tm5" marTop="" pad="p-3" />
-          <TeamCom img="tm6" marTop="-50px" pad="p-3" />
-          <TeamCom img="tm7" marTop="-280px" pad="p-3" />
-          <TeamCom img="tm8" marTop="-150px" marLeft="-20px" pad="p-3" />
-
-          <TeamCom />
-          <TeamCom />
-          <TeamCom img="tm9" marTop="-250px" marLeft="-30px" pad="p-3" />
-          <TeamCom img="tm10" marTop="-120px" marLeft="-40px" pad="p-3" />
+          {studio.map((item) => (
+            <TeamCom
+              img={item.img}
+              marTop={item.marTop}
+              marLeft={item.marLeft}
+              pad={item.pad}
+            />
+          ))}
         </Row>
       </Container>
     </>

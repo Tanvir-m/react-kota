@@ -1,559 +1,90 @@
-import { useContext, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Context } from '../../../context/context';
+import { useState } from 'react';
+import { Row, Col } from 'react-bootstrap';
 import style from '../../css/style.module.scss';
 import GalCom from './GalCom';
-import Tabs from './Tabs';
+import { work } from '../../Data/Data';
 
 const TabGal = () => {
-  const contextStore = useContext(Context);
+  // const contextStore = useContext(Context);
+  const [data, setData] = useState(work);
+  const [act, setAct] = useState({
+    all: true,
+    brand: false,
+    dm: false,
+    web: false,
+  });
+
+  const allClickHandler = () => {
+    setData(work);
+    setAct({ all: true, brand: false, dm: false, web: false });
+  };
+
+  const filterItem = (catItem) => {
+    const updatedItems = work.filter((curElem) => curElem.cat === catItem);
+    switch (catItem) {
+      case 'brand':
+        setAct({ all: false, brand: true, dm: false, web: false });
+        break;
+      case 'dm':
+        setAct({ all: false, brand: false, dm: true, web: false });
+        break;
+      case 'web':
+        setAct({ all: false, brand: false, dm: false, web: true });
+        break;
+      default:
+        setAct({ all: true, brand: false, dm: false, web: false });
+      // code block
+    }
+    setData(updatedItems);
+  };
+
   return (
     <>
       <Row className={style.tabs}>
         <Col md={{ span: 5, offset: 7 }}>
-          <Tabs />
+          <ul className={style.tabUl}>
+            <li
+              onClick={allClickHandler}
+              className={act.all && `${style.active}`}
+            >
+              All
+            </li>
+            <li
+              onClick={() => filterItem('brand')}
+              className={act.brand && `${style.active}`}
+            >
+              Branding
+            </li>
+            <li
+              onClick={() => filterItem('dm')}
+              className={act.dm && `${style.active}`}
+            >
+              Digital Marketing
+            </li>
+            <li
+              onClick={() => filterItem('web')}
+              className={act.web && `${style.active}`}
+            >
+              Websites
+            </li>
+          </ul>
         </Col>
         {/* All */}
-        {contextStore.tabGal.all && (
-          <>
-            <GalCom
-              mt="-150px"
-              span={5}
-              offset={1}
-              img="work/br1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              btn={true}
-              span={5}
-              offset={1}
-              img="work/br2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
 
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br3.webp"
-              mt="270px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Understanding Jewellery"
-              para="We uncovered the brand proposition, and created a sophisticated visual identity and digital platform for this unique jewellery concept."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Trace Solutions"
-              para="We created a new brand concept for a property management software company."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br5.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Brinkworth"
-              para="We created a brand new identity and online platform for these award winning documentary makers."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="150px"
-              img="work/br6.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Cynozure"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              mt="250px"
-              img="work/br7.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Jazz Cafe"
-              para="We re-branded one of London’s most iconic music venues."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br8.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Uhuru"
-              para="We designed and shaped a new ethically sourced fashion brand."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/dm1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/dm2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/dm3.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/dm5.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web3.webp"
-              mt="230px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web5.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/web6.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web7.webp"
-              mt="230px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web8.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web9.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/web10.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-          </>
-        )}
-        {/* Branding */}
-        {contextStore.tabGal.brand && (
-          <>
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              btn={true}
-              span={5}
-              offset={1}
-              img="work/br2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br3.webp"
-              mt="270px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Understanding Jewellery"
-              para="We uncovered the brand proposition, and created a sophisticated visual identity and digital platform for this unique jewellery concept."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Trace Solutions"
-              para="We created a new brand concept for a property management software company."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br5.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Brinkworth"
-              para="We created a brand new identity and online platform for these award winning documentary makers."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="150px"
-              img="work/br6.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Cynozure"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              mt="250px"
-              img="work/br7.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Jazz Cafe"
-              para="We re-branded one of London’s most iconic music venues."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br8.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="Uhuru"
-              para="We designed and shaped a new ethically sourced fashion brand."
-            />
-          </>
-        )}
-
-        {/* digital marketing */}
-        {contextStore.tabGal.dm && (
-          <>
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/dm1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              btn={true}
-              span={5}
-              offset={1}
-              img="work/dm2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/dm3.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/dm5.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-          </>
-        )}
-        {/* Web */}
-        {contextStore.tabGal.web && (
-          <>
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/br1.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              btn={true}
-              span={5}
-              offset={1}
-              img="work/web2.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web3.webp"
-              mt="230px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web4.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web5.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/web6.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web7.webp"
-              mt="230px"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web8.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-
-            <GalCom
-              span={5}
-              offset={1}
-              img="work/web9.webp"
-              one="BRANDING"
-              two="WEB DESIGHN"
-              three="WEB DEVELOPMENT"
-              head="Martin Building"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building. "
-            />
-            <GalCom
-              span={5}
-              offset={1}
-              mt="230px"
-              img="work/web10.webp"
-              one="BRANDING"
-              two="MARKETING"
-              three="WEB DESIGHN"
-              pad="pr-5 pt-5 pb-5"
-              head="ContractPodAi"
-              para="We created a cutting edge platform for San Francisco-based firm Martin Building."
-            />
-          </>
-        )}
+        {data.map((item) => (
+          <GalCom
+            mt={item.mt}
+            span={item.span}
+            offset={item.offset}
+            img={item.img}
+            one={item.one}
+            two={item.two}
+            three={item.three}
+            head={item.head}
+            para={item.para}
+            cat={item.cat}
+          />
+        ))}
       </Row>
     </>
   );
